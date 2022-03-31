@@ -4,7 +4,7 @@ O objetivo é criar testes e2e para os cenários já criados no pacote de test.
 
 ### Rodando a API
 
-O repositório consiste em uma pequena api para cadastro de customers(clientes) e cards(cartões) para customers. O projeto está utilizando Java 8 e usamos o maven para gerenciamento de pacotes, portanto antes de tudo você deve ter os dois instalados na sua máquina e baixar o projeto. Para rodar a api basta digitar os comandos dentro da pasta principal do projeto:
+O repositório consiste em uma pequena API para cadastro de customers(comprador portador de um cartão) e cards(cartões) para seus respectivos portadores. O projeto está utilizando Java 8 e usamos o maven para gerenciamento de pacotes, portanto antes de tudo você deve ter os dois instalados na sua máquina e baixar o projeto. Para rodar a api basta digitar os comandos dentro da pasta principal do projeto:
 
 ```bash
 mvn clean install
