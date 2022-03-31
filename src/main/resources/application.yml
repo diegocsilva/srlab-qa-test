@@ -1,0 +1,33 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    url: jdbc:h2:mem:test;MODE=PostgreSQL
+    username: sa
+    password: password
+  jpa:
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      javax.persistence.schema-generation:
+        database.action: drop-and-create
+        create-database-schemas: true
+        create-source: metadata
+        drop-source: metadata
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      path: /h2-console
+      enabled: true
+
+logging:
+  level:
+    root: info
+
+springdoc:
+  api-docs:
+    resolve-schema-properties: true
+  version: '@project.version@'
+  title: Test API
+  terms: http://swagger.io/terms/
+  license: Apache 2.0
+  url: http://springdoc.org
